@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use evalues, please cite it as below, together with the papers of the methods you use."
+title: "evalues: Statistical Tests You Can Check after Every Observation"
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/s3bastiankoch/evalues"
+authors:
+  - family-names: Koch
+    given-names: Sebastian
+keywords:
+  - e-values
+  - anytime-valid inference
+  - sequential testing
+  - confidence sequences

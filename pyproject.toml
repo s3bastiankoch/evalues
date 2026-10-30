@@ -1,0 +1,62 @@
+[project]
+name = "evalues"
+version = "0.1.0"
+description = "Statistical tests you can check after every observation: anytime-valid tests, confidence sequences, change detection and e-value combination"
+readme = "README.md"
+authors = [
+    { name = "Sebastian Koch", email = "me@sbstn.io" }
+]
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = [
+    "e-values",
+    "e-process",
+    "anytime-valid",
+    "sequential-testing",
+    "confidence-sequence",
+    "change-detection",
+    "multiple-testing",
+    "benchmarking",
+    "a-b-testing",
+    "llm-evaluation",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+dependencies = [
+    "numpy>=1.24",
+]
+
+[project.urls]
+Homepage = "https://github.com/s3bastiankoch/evalues"
+Repository = "https://github.com/s3bastiankoch/evalues"
+Issues = "https://github.com/s3bastiankoch/evalues/issues"
+Changelog = "https://github.com/s3bastiankoch/evalues/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ["uv_build>=0.8.11,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "scipy",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
